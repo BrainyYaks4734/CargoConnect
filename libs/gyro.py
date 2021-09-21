@@ -1,3 +1,4 @@
+# startfile libs/gyro.py
 def gyroTurn(degrees, speed):
     if (degrees < 0):
         hub.motion_sensor.reset_yaw_angle()
@@ -13,3 +14,4 @@ def gyroTurn(degrees, speed):
         while angle<degrees:
             angle = hub.motion_sensor.get_yaw_angle()
         motors.stop()
+# endfile libs/gyro.py
